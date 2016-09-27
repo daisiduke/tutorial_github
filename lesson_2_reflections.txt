@@ -11,13 +11,27 @@ The main advantage is the flexible modification of the staging are.
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+The staging area provides the possibility to check on what is in the temporary commit. And to check on the differences of working directory, staging area and latest commit.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+When adding a totally different new feature, which might not work.
+When switching to a different data framework.
+
 How do the diagrams help you visualize the branch structure?
+
+To understand which commits will be lost when not saved in a new branch or merged with an existing one.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+Merging two branches is git's way to join the respective files in the two repositories including the changes, bugfixes, new features of both
+branches. When looking at the commits in a parents-child metaphor than the diagram is some kind of family tree. 
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+Automatic merging is a powerfull tool to merge two different files that include seperated parts which do not depend on each other in a way
+that allows this kind of automatic operation.
+If however parts are related to each other a manual double-check is neccnecessary to choose between versions two maintain a working file.
